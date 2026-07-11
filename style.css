@@ -276,7 +276,151 @@ a {
 
 
 
+/* 5. Challenging Part - Hackathon */
+.hackathon-section {
+    position: relative;
+    background: #0E1428;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    max-width: 1230px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 40px;
+}
 
+
+.pretitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #7CFF6B;
+    background: rgba(2, 15, 0, 0.08);
+    border: 1px solid #7CFF6B;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 28px;
+}
+
+.pretitle::before {
+    content: "//";
+    opacity: 0.7;
+}
+
+.title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(34px, 5.5vw, 58px);
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+
+.title .highlight {
+    background: linear-gradient(100deg, #00D9FF 0%, #A855F7 50%, #FF6B35 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s ease-in-out infinite;
+}
+
+.subtext {
+    font-size: 16px;
+    line-height: 1.6;
+    color: whitesmoke;
+    margin: 0 auto 48px auto;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 50px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(100deg, #00D9FF 0%, #A855F7 50%, #FF6B35 100%);
+    border-radius: 10px;
+    padding: 16px 22px;
+    min-width: 180px;
+    text-align: left;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-3px);
+}
+
+.stat-icon {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.stat-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+}
+
+.stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: black;
+    margin-top: 2px;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    background: blue;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 0 0 rgba(124, 255, 107, 0.4);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    box-shadow: 0 0 32px rgba(124, 255, 107, 0.45);
+    transform: translateY(-2px);
+}
+
+.cta-button:focus-visible {
+    outline: 2px solid #00D9FF;
+    outline-offset: 3px;
+}
+
+.cta-button .arrow {
+    transition: transform 0.25s ease;
+}
+
+.cta-button:hover .arrow {
+    transform: translateX(4px);
+}
 
 
 
