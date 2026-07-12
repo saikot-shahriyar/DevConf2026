@@ -274,8 +274,6 @@ a {
 }
 
 
-
-
 /* 5. Challenging Part - Hackathon */
 .hackathon-section {
     position: relative;
@@ -289,7 +287,6 @@ a {
     margin-bottom: 30px;
     padding: 40px;
 }
-
 
 .pretitle {
     display: inline-flex;
@@ -421,8 +418,6 @@ a {
 .cta-button:hover .arrow {
     transform: translateX(4px);
 }
-
-
 
 
 /* 6. Footer */
